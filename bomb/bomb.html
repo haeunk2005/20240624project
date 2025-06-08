@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지뢰찾기</title>
+  <link rel="stylesheet" href="bomb.css">
+</head>
+<body>
+  <div id="message-box"></div>
+
+  <div class="controls">
+    <button onclick="setDifficulty('easy')">초급</button>
+    <button onclick="setDifficulty('medium')">중급</button>
+    <button onclick="setDifficulty('hard')">고급</button>
+    <button onclick="initGame()">🔁 리셋</button>
+  </div>
+
+  <div class="game-wrapper">
+    <div id="game-board"></div>
+    <div id="mine-counter">남은 지뢰: <span id="mines-left">10</span></div>
+  </div>
+
+  <script src="bomb.js"></script>
+</body>
+</html>

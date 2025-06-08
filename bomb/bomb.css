@@ -1,0 +1,103 @@
+/* 전체 스타일 */
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 상단 메시지 박스 */
+  #message-box {
+    font-size: 2rem;
+    margin-top: 10px;
+    height: 2.5rem;
+    color: #f1c40f;
+  }
+  
+  /* 버튼 영역 */
+  .controls {
+    margin: 10px 0;
+  }
+  .controls button {
+    margin: 0 5px;
+    padding: 8px 14px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background-color: #1abc9c;
+    color: white;
+    cursor: pointer;
+  }
+  .controls button:hover {
+    background-color: #16a085;
+  }
+  
+  /* 게임판 + 지뢰카운터를 감싸는 레이아웃 */
+  .game-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  /* 지뢰판 */
+  #game-board {
+    display: grid;
+    grid-gap: 2px;
+  }
+  
+  /* 셀 기본 */
+  .cell {
+    width: 30px;
+    height: 30px;
+    background-color: #667172;
+    border: 1px solid #667172;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  /* 셀 공개 */
+  .cell.revealed {
+    background-color: #adb9bc;
+    cursor: default;
+  }
+  
+  /* 지뢰 터짐 */
+  .cell.bomb {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* 깃발 표시 */
+  .cell.flagged {
+    background-color: #f39c12;
+    color: black;
+  }
+  
+  /* 지뢰 수 카운터 박스 */
+  #mine-counter {
+    background: #34495e;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    align-self: flex-start;
+    box-shadow: 0 0 5px #000;
+    min-width: 140px;
+    text-align: center;
+  }
+  
+  /* 반응형 대응 */
+  @media (max-width: 600px) {
+    .game-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

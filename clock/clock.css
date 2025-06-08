@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; /* 디지털 시계 폰트 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    font-family: 'Segoe UI', sans-serif; /* 타이틀은 일반 폰트 유지 */
+  }
+  
+  #clock {
+    font-size: 12rem; 
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+  
+  #date {
+    font-size: 3rem; 
+    letter-spacing: 0.05em;
+    margin-bottom: 40px;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #222;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-size: 1.2rem;
+  }
+  
+  .back-button:hover {
+    background-color: #444;
+  }
+  
